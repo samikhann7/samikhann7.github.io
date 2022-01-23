@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+
+    <title>GDSC</title>
+</head>
+
+<body>
+    <header>
+        <nav id='nav'>
+            <ul>
+                <li id='left'><a class='navitem' href="#home">MD. SAMI KHAN</a></li>
+                <li class='right'><a class='navitem' href="#home">Home</a></li>
+                <li class='right'><a class='navitem' href="#hobby">My Hobbies</a></li>
+                <li class='right'><a class='navitem' href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home">
+        <section class="info">
+            <h1>About Me</h1>
+            <p>Hi, I'm Sami from CSE. I live in Delhi. I look forward to being a part of the Google Developer Students Club and hopefully I could be a valuable asset to the society. Currently I only have basic knowledge of Web Development and hosting but I plan on expanding my knowledge in the field of App Development, Machine Learning and Artificial Intelligence. 
+            </p>
+            <button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">More</a>
+            </button>
+        </section>
+        <section class='image'>
+            <img src="pic.jpg" alt="" srcset="">
+        </section>
+    </div>
+    <div id="hobby">
+        <h1>HOBBIES</h1>
+        <div id='icon'>
+            <section id="football" onclick="func(this.id)"><img
+                    src="https://img.icons8.com/ios/48/000000/football2--v2.png" />
+                <h4>Football</h4>
+                <h6>(click to know more)</h6>
+                <div id="footballdrop" class='text'>Football is without a doubt my favorite hobby, it helps me take my mind off things and blow off some steam.</div>
+            </section>
+            <section id="code" onclick="func(this.id)"><img
+                    src="https://img.icons8.com/doodle/48/000000/console--v2.png" />
+                <h4>Coding</h4>
+                <h6>(click to know more)</h6>
+                <div id="codedrop" class='text'>The fact that I'm in CSE is a pretty good explanation of why I have coding as a hobby. I believe it boosts analytical skills and problem solving abilities immensely.</div>
+            </section>
+            <section id="music" onclick="func(this.id)"><img
+                    src="https://img.icons8.com/doodle/48/000000/apple-music--v1.png" />
+                <h4>Music</h4>
+                <h6>(click to know more)</h6>
+                <div id="musicdrop" class='text'>I listen to music pretty much all the time. Don't have a specific genre just whatever sounds good goes.</div>
+            </section>
+        </div>
+
+
+    </div>
+    <div id="skills">
+        <h1>SKILLS</h1>
+        <label for="file"><img src="https://img.icons8.com/ios-filled/50/000000/html-5--v1.png"/>&nbsp;HTML</label>
+        <progress id="file" value="65" max="100"> 32% </progress>
+        <label for="file"><img src="https://img.icons8.com/ios-filled/50/000000/css3.png"/>&nbsp;CSS</label>
+        <progress id="file" value="80" max="100"> 32% </progress>
+        <label for="file"><img src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png"/>&nbsp;JavaScript</label>
+        <progress id="file" value="50" max="100"> 32% </progress>
+        <label for="file"><img src="https://img.icons8.com/ios-filled/50/000000/python.png"/>&nbsp;Python</label>
+        <progress id="file" value="80" max="100"> 32% </progress>
+        <label for="file"><img src="https://img.icons8.com/ios/50/000000/java-coffee-cup-logo--v1.png"/>&nbsp;Java</label>
+        <progress id="file" value="55" max="100"> 32% </progress>
+        <label for="file"><img src="https://img.icons8.com/ios-filled/50/000000/phishing.png"/>&nbsp;Rick-Rolling</label>
+        <progress id="file" value="100" max="100"> 32% </progress>
+        <button><a href="sike.html" target="_blank">What is Rick-Rolling you ask ?</a></button>
+    </div>
+
+</body>
+
+</html>
