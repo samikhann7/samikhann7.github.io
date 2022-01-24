@@ -1,0 +1,123 @@
+#nav{
+    display:flex;
+    justify-content: center;
+    width:100vw;
+    border-bottom: 1px solid rgb(197, 195, 195);
+    margin:auto;
+    padding: 1rem 0rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    position: fixed;
+    left:0rem;
+    top: 0rem;
+    background-color: white;
+    z-index: 50;
+}
+#logo{
+    margin-right: 3rem;
+}
+#nav ul{
+    display: flex;
+    list-style: none;
+}
+#nav ul li{
+    margin: 0rem 2rem;
+}
+#nav ul li a{
+    text-decoration: none;
+    color:black;
+    transition: all 0.2s;
+    padding-bottom: 0.7rem;
+}
+#nav ul li a:hover{
+    border-bottom: 5px solid rgb(107, 171, 231);
+}
+#schedule{
+    border-radius: 8px;
+    margin-top: 0.3rem;
+    height: 2.5rem;
+    width:8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+#schedule :hover{
+    background-color: rgb(66, 135, 199);
+    cursor: pointer;
+    border-color: rgb(66, 135, 199);
+}
+#schedule a{
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 1.9rem;
+    margin-left: -0.45rem;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:1025px){
+    #nav{
+        background-color: black;
+        width: 108vw;
+        flex-direction: column;
+    }
+    #nav ul{
+        /* display: none; */
+        text-align: center;
+    }
+    #nav ul li a{
+        color: white;
+    }
+    #nav ul li{
+        margin: 0.3rem 0;
+    }
+    #nav ul{
+        flex-direction: column;
+        position: relative;
+        top:-2rem;
+    }
+    #nav #logo{
+        filter: invert(100%);
+        height: 5rem;
+        width: 16rem;
+        display: block;
+        margin: -2rem auto;
+        position: relative;
+        top: 6rem;
+    }
+    #nav #schedule{
+        position: absolute;
+        right: 28rem;
+        top: 12rem; 
+    }
+    .burger{
+        display: inline;
+        width: 3rem;
+        position: absolute;
+        right: 3rem;
+        top: 0.8rem;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.3rem;
+        padding-left: 0.6rem;
+    }
+    .burger:hover{
+        border:4px solid white;
+    }
+    .line{
+        display: block;
+        background-color: white;
+        width: 2.5rem;
+        margin: 0.3rem 0;
+        height: 0.3rem;
+    }
+    .h-nav{
+        height:3rem;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .l-class{
+        position: relative;
+        left:-20rem;
+    }
+}

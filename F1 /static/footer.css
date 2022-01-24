@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    position: absolute;
+    border-top: 2px solid black;
+    top:70.2rem;
+    left:0rem;
+    background-color: rgb(34, 34, 34);
+    width: 100vw;
+    flex-wrap: wrap;
+}
+footer img{
+    height:2.5rem;
+    width:4rem;
+}
+footer p{
+    position: absolute;
+    right: 1.9rem;
+    color: rgb(207, 207, 207);
+    font-family: 'Righteous', cursive;
+}
+
+
+
+
+@media screen and (max-width:1025px) {
+    footer{
+        top:182.7rem;
+        justify-content: center;
+        height: 5.5rem;
+    }
+    footer p{
+        top:2rem;
+        font-size:0.8rem;
+    } 
+}

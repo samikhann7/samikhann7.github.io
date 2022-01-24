@@ -1,0 +1,46 @@
+doctype html 
+html
+  head
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    title Contemp Dance School
+    block scripts
+    block style
+  body
+    header 
+            nav#nav.h-nav  
+                img#logo(src="/static/logo.png", alt="")
+                ul.v-class.ul  
+                    li #[a(href='/') HOME]
+                    li #[a(href='/') PRICING]
+                    li #[a(href='/') INSTRUCTORS]
+                    li #[a(href='/') PARTNERS]
+                    li #[a(href='/') PAGES]
+                    li #[a(href='/') CONTACT]
+                button#schedule.v-class #[a(href='/schedule') SCHEDULE]
+                .burger 
+                  .line 
+                  .line 
+                  .line 
+    block content
+    block footer 
+     footer 
+            img(src="/static/logo.png", alt="")
+            p#underimg Contemp is a well-established dance school comprised of 150+ students located in San Diego, CA. We offer recreational dance classes for both adults and children in the fun atmosphere!
+            div#right
+                p#up GET SOCIAL 
+                p#down Follow us to stay connected and receive instant updates.
+                ul 
+                    li #[i(href='#' class="fa fa-facebook" style="font-size: 2rem;" )]
+                    li #[i(href='#' class="fa fa-instagram" style="font-size: 2rem;")]
+                    li #[i(href='#' class="fa fa-twitter" style="font-size: 2rem;")]
+                    li #[i(href='#' class="fa fa-youtube-play" style="font-size: 2rem;")]
+    block script 
+      script(src="/static/hamburger.js") 
+      script(src="/static/practice.js") 

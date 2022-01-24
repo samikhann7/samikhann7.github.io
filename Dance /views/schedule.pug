@@ -1,0 +1,31 @@
+extends base.pug
+block style 
+    style 
+        include ../static/style_nav.css
+        include ../static/style_footer.css
+        include ../static/style_schedule.css
+        inc
+block scripts 
+    script 
+        include ../static/submit.js
+block content
+    div 
+        p#form Schdeule a Class
+        form(action="/schedule" method='post')
+            input(type="text" name='name' placeholder='Enter Name')
+            input(type="number" name='age' placeholder='Enter Age')
+            input(type="text" name='number' placeholder='Enter Number')
+            label(for="Style") Select style
+            select(name='Style' id="Style")
+                option(value="Latin" selected ) Latin  
+                option(value="House") House  
+                option(value="Hip-Hop") Hip-Hop  
+                option(value="Urban") Urban
+                option(value="Breakdance") Breakdance
+            label(for="time") Select timing
+            select(name='time' id='time')
+                option(value="1" selected ) 09:00 AM-11:00 AM 
+                option(value="2") 12:00 PM-02:00 PM  
+                option(value="3") 03:00 PM : 05:00 PM
+                option(value="4") 06:00 PM : 08:00 PM
+            <button id='sched' onclick="message()">SUBMIT</button>

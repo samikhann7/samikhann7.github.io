@@ -1,0 +1,54 @@
+extends base.pug
+block style 
+    style 
+        include ../static/nav.css
+        include ../static/footer.css
+        include ../static/style1.css
+
+block content
+    <section id="main">
+        <div>
+            <img src="\static\news1.jpg" alt="">
+            <p>Brilliant Verstappen claims maiden title after victory in Abu Dhabi season finale following late Safety
+                Car drama</p>
+        </div>
+        <div>
+            <img src="\static\news2.webp" alt="">
+            <p>Mercedes Lodge Appeal Over Max Verstappen's Abu Dhabi Grand Prix Win</p>
+        </div>
+        <div>
+            <img src="\static\news3.jpg" alt="">
+            <p>Verstappen praises 'amazing driver' Hamilton after winning title showdown against 7-time champion
+            </p>
+        </div>
+    </section>
+    <section id="end">
+        <h1>Explore</h1>
+        <div class="container">
+            <div id="exp1">Race Calendar</div>
+            <div id="exp2">Driver's Market</div>
+            <div id="exp3">Podcasts</div>
+            <div id="exp4">Esports</div>
+        </div>
+    </section>
+    <section id="download">
+        <p>DOWNLOAD THE <br>OFFICIAL F1 APP</p>
+        <ul id="left">
+            <li>
+                <a href="">
+                    <img src="\static\playstore.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="\static\applestore.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul id="right">
+            <li><i href="#" class="fa fa-facebook"></i></li>
+            <li><i href="#" class="fa fa-twitter"></i></li>
+            <li><i href="#"class="fa fa-instagram"></i></li>
+            <li><i href="#" class="fa fa-youtube-play"></i></li>
+        </ul>
+    </section>

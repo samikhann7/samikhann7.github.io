@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            position: fixed;
+            z-index: 10;
+            left: 0rem;
+            top: 0rem;
+        }
+
+        #upper {
+            position: absolute;
+            top: 0rem;
+            left: 0rem;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            background-color: white;
+        }
+
+        #upper img#phoneF1 {
+            display: none;
+        }
+
+        #upper .FiA {
+            width: 4rem;
+            height: 3rem;
+            margin-top: 0.3rem;
+            opacity: 0.5;
+        }
+
+        #upper .FiA:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        #upper .F1TV {
+            height: 3.5rem;
+            width: 5.5rem;
+            margin: -1rem 0.5rem;
+            margin-right: 1rem;
+        }
+
+        #upper ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        #upper ul li {
+            padding: 0rem 1rem;
+        }
+
+        #upper ul.Tickets {
+            position: relative;
+            right: -30rem;
+        }
+
+        #upper ul.F a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: 'Righteous', cursive;
+            color: black;
+            opacity: 0.5;
+        }
+
+        #upper ul.F a:hover {
+            opacity: 1;
+        }
+
+        #upper ul.F a:active {
+            opacity: 1;
+        }
+
+        #upper ul.Tickets a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Righteous', cursive;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        #upper ul.Tickets a:hover {
+            opacity: 1;
+            color: rgb(218, 19, 19);
+            text-decoration: underline;
+        }
+
+        #upper button {
+            width: 6rem;
+            height: 3rem;
+            margin: -0.8rem 0.1rem;
+            border-radius: 0.7rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border: none;
+
+        }
+
+        button#signin {
+            color: white;
+            background-color: black;
+            transition: all 0.3s;
+            border: 2px solid black;
+        }
+
+        button#signin:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        button#subscribe {
+            background-color: rgb(218, 19, 19);
+            color: white;
+            border: 2px solid rgb(218, 19, 19);
+            transition: all 0.3s;
+        }
+
+        button#subscribe:hover {
+            background-color: white;
+            color: rgb(218, 19, 19);
+            cursor: pointer;
+        }
+
+        #upper button i {
+            margin-right: 0.3rem;
+        }
+
+        #upper button#loginphone {
+            display: none;
+        }
+
+        section#undernav {
+            display: flex;
+            position: absolute;
+            left: 0rem;
+            top: 3.5rem;
+            width: 100vw;
+            height: 6rem;
+            background-color: rgb(218, 19, 19);
+        }
+
+        section#undernav img {
+            height: 6rem;
+        }
+
+        section#undernav ul.underhead {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        section#undernav ul.underhead a {
+            text-decoration: none;
+            margin: 0rem 1rem;
+            color: white;
+            font-family: 'Righteous', cursive;
+            font-size: 1.1rem;
+            font-weight: 200;
+        }
+
+        section#undernav ul.underhead i {
+            font-size: 11px;
+        }
+
+        section#undernav ul.underhead a:hover {
+            color: rgb(190, 190, 190);
+        }
+    </style>
+</head>
+<body>
+    This is F2
+    
+    <header>
+        <nav id="upper">
+            <img class="FiA" src="FiA.png" alt="">
+            <img id="phoneF1" src="F1.png" alt="">
+            <ul class="F">
+                <li><a href="/">F1</a></li>
+                <li><a href="/F2">F2</a></li>
+                <li><a href="/F3">F3</a></li>
+            </ul>
+            <button id="loginphone"><i class="fa fa-user-circle"></i></button>
+            <ul class="Tickets">
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="Tickets.html">Tickets</a></li>
+                <li><a href="Experiences.html">Experiences</a></li>
+                <img src="F1TV1.jpg" alt="" class="F1TV">
+                <button id="signin"><i class="fa fa-user-circle"></i>SIGN IN</button>
+                <button id="subscribe">SUBSCRIBE</button>
+            </ul>
+        </nav>
+        <section id="undernav">
+            <img src="F1.png" alt="">
+            <ul class="underhead">
+                <li><a href="">Latest <i class="fa fa-chevron-down"></i></a></li>
+                <li><a href="">Video <i class="fa fa-chevron-down"></i></a></li>
+                <li><a href="">Schedule</a></li>
+                <li><a href="">Standings <i class="fa fa-chevron-down"></i></a></li>
+                <li><a href="">Drivers <i class="fa fa-chevron-down"></i></a></li>
+                <li><a href="">Teams <i class="fa fa-chevron-down"></i></a></li>
+                <li><a href="">Gaming <i class="fa fa-chevron-down"></i></a></li>
+                <li><a href="">Live Timing</a></li>
+                <li><a href="">Newsfeed</a></li>
+            </ul>
+        </section>
+    </header>
+</body>
+</html>

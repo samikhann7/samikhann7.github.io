@@ -1,0 +1,124 @@
+extends base.pug
+block scripts 
+ script 
+    include ../static/countdown.js
+block style 
+    style 
+        include ../static/style_home.css
+        include ../static/style_nav.css
+        include ../static/style_footer.css
+block content 
+    section#sec1 
+            div
+                span#location #[i(href='#',aria-hidden='true',class='fa fa-map-marker')]
+                    a(href='#') &nbsp;JANUARY, 05-15, 2022, NEW DELHI, INDIA
+                p URBAN DANCE MASTERCLASS
+                span#countdown 
+                span#belowcountdown DAYS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOURS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINUTES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SECONDS
+                img#dancer(src="/static/sec1.png", alt="")
+    section#sec2 
+        div#div1.serv 
+            i(href='#',aria-hidden='true',class="fa fa-user")
+            p#main Personal Training 
+            p#sub Personal training offers one-on-one individually designed dance sessions that perfectly fit your needs
+        div#div2.serv 
+            i(href='#',aria-hidden='true',class='fa fa-users')
+            p#main Group Training
+            p#sub Group training allows you to enjoy the best dance styles while learning new moves with other students.
+        div#div3.serv 
+            i(class="material-icons") speaker
+            p#main Dance Workshop
+            p#sub If you are not sure what to pick, you can always try one of our regular dance workshops.
+    section#sec3 
+        h1 Instructors
+        p Since our establishment, we have gathered a team of more than 20 dance instructors who have experience in various dance styles.
+        ul 
+            li#ins1
+                div#contact 
+                    i(href='#',aria-hidden='true',class='fa fa-facebook')
+                    i(href='#',aria-hidden='true',class='fa fa-instagram')
+                    i(href='#',aria-hidden='true',class='fa fa-twitter')
+                img(src='/static/instructor1.jpg')
+                p.name Kate Anderson 
+                p.sub FOUNDER, SENIOR INSTRUCTOR
+            li#ins2 
+                div#contact 
+                    i(href='#',aria-hidden='true',class='fa fa-facebook')
+                    i(href='#',aria-hidden='true',class='fa fa-instagram')
+                    i(href='#',aria-hidden='true',class='fa fa-twitter')
+                img(src='/static/instructor2.jpg')
+                p.name Jessica Peterson
+                p.sub DANCE INSTRUCTOR, LATIN
+            li#ins3
+                div#contact 
+                    i(href='#',aria-hidden='true',class='fa fa-facebook')
+                    i(href='#',aria-hidden='true',class='fa fa-instagram')
+                    i(href='#',aria-hidden='true',class='fa fa-twitter') 
+                img(src='/static/instructor3.jpg')
+                p.name Richard Williams
+                p.sub DANCE INSTRUCTOR, HOUSE
+            li#ins4
+                div#contact 
+                    i(href='#',aria-hidden='true',class='fa fa-facebook')
+                    i(href='#',aria-hidden='true',class='fa fa-instagram')
+                    i(href='#',aria-hidden='true',class='fa fa-twitter') 
+                img(src='/static/instructor4.jpg')
+                p.name Meryl McMillan
+                p.sub DANCE INSTRUCTOR, HIP-HOP
+            li#ins5
+                div#contact 
+                    i(href='#',aria-hidden='true',class='fa fa-facebook')
+                    i(href='#',aria-hidden='true',class='fa fa-instagram')
+                    i(href='#',aria-hidden='true',class='fa fa-twitter') 
+                img(src='/static/instructor5.jpg')
+                p.name Henry Wilson
+                p.sub DANCE INSTRUCTOR, URBAN
+            li#ins6
+                div#contact 
+                    i(href='#',aria-hidden='true',class='fa fa-facebook')
+                    i(href='#',aria-hidden='true',class='fa fa-instagram')
+                    i(href='#',aria-hidden='true',class='fa fa-twitter') 
+                img(src='/static/instructor6.jpg')
+                p.name Stella Clark
+                p.sub DANCE INSTRUCTOR, BREAKDANCE
+    section#sec4 
+        h1 Classes Description &amp; Schedule
+        p Below you can read more about our dance classes and their schedule. Our instructors offer various types of classes in a lot of different dance styles. You can learn more about our classes below.
+        div#book
+            ul 
+                span#li11 &#8594;
+                li#li1 #[a(href='#') BASIC]
+                span#li22 &#8594;
+                li#li2 #[a(href='#') INTERMEDIATE]
+                span#li33 &#8594;
+                li#li3 #[a(href='#') ADVANCED]
+                span#li44 &#8594;
+                li#li4 #[a(href='#') PROFESSIONAL] 
+            button(href='/book') #[a(href='/book') BOOK A FREE LESSON ]
+        div.class
+            img#class1(src="/static/class1.jpg", alt="")
+            div.info
+                p.timing Monday 9:00 am - 10:00 am
+                p.name #[a(href='#') Hip-Hop Techniques (Group Lesson)] 
+                p.inst by #[a(href='#') Meryl McMillan] 
+
+        div.class
+            img#class2(src="/static/class2.jpg", alt="")
+            div.info 
+                p.timing Tuesday 11:00 am - 12:00 pm
+                p.name #[a(href='#') Urban Dance Class (Teens &amp; Adults)] 
+                p.inst by #[a(href='#') by Henry Wilson] 
+        div.class 
+            img#class3_1(src="/static/class3.1.jpg", alt="")
+            img#class3_2(src="/static/class3.2.jpg", alt="")
+            img#class3_3(src="/static/class3.3.jpg", alt="")
+            div.info 
+                p.timing Wednesday 1:00 pm - 2:00 pm
+                p.name #[a(href='#') Contemporary Dance Workshop #[br] (Urban/Breakdance)] 
+                p.inst by #[a(href='#') M. McMillan, H. Wilson, K. Anderson] 
+        div.class
+            img#class1(src="/static/class4.jpg", alt="")
+            div.info 
+                p.timing Thursday 3:00 pm - 4:00 pm
+                p.name #[a(href='#') Personal House Dance Class] 
+                p.inst by #[a(href='#') Richard Williams]            

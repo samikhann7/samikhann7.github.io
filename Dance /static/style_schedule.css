@@ -1,0 +1,70 @@
+div{
+    position: absolute;
+    top:7rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100vw;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width:50vw;
+}
+form input{
+    text-align: center;
+}
+p#form{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+input, select{
+    margin: 0.5rem 0rem;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 12px;
+    background-color: rgb(213, 233, 252);
+
+}
+label{
+    margin-top: 0.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+button#sched{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid;
+    border-radius: 12px;
+    height: 2.5rem;
+    margin:1rem 0rem;
+    color: white;
+    background-color: black;
+}
+button#sched:hover{
+    background-color: rgb(66, 135, 199);
+    cursor: pointer;
+}
+footer{
+    position: absolute;
+    top:50rem;
+}
+
+
+@media screen and (max-width: 1025px){
+    .line {
+        display: block;
+        background-color: white;
+        width: 2.5rem;
+        margin: -6.7rem 0;
+        height: 0.3rem;
+    }
+    .burger{
+        height: 2rem;
+    }
+
+}
